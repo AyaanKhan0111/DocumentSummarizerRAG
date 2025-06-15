@@ -1,0 +1,1 @@
+Data Mining overview, Data Warehouse and OLAP Technology. Data Warehouse Architecture, A Three-Tier Data WarehouseArchitecture. OLAP,OLAP queries, metadata repository. Data Preprocessing – DataIntegration and Transformation, Data Reduction, Data Mining Primitives.
