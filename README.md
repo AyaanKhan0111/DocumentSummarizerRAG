@@ -1,31 +1,38 @@
 # RAG Document Summarizer
 
-A Document Summarization system using Retrieval-Augmented Generation (RAG) that combines semantic search with **local open-source Large Language Models** for generating high-quality summaries.
+A desktop-based document summarization system using Retrieval-Augmented Generation (RAG). This tool leverages local open-source Large Language Models to summarize PDF, TXT, and Markdown documents on your local machine without requiring an internet connection or API keys.
+
+---
 
 ## Features
 
-  ** Uses local open-source models
-- ** Multiple AI Models**: Choose from various pre-trained models
-- ** Multi-format Support**: PDF, TXT, and Markdown files
-- ** Semantic Chunking**: Intelligent document splitting with overlap
-- ** Vector Search**: ChromaDB-based similarity search for relevant content retrieval
-- ** Beautiful GUI**: Modern Tkinter-based desktop application
-- ** Local Processing**: Everything runs on your machine
-- ** Modular Design**: Clean separation of concerns across modules
+- Local open-source models
+- Multiple summarization models supported
+- Input support for PDF, TXT, and Markdown files
+- Intelligent document chunking with overlap
+- ChromaDB-based vector search for context retrieval
+- Tkinter-based desktop GUI
+- Completely offline and privacy-preserving
+- Modular architecture with separate components
+
+---
 
 ## Project Structure
 
-\`\`\`
+```
 DocumentSummarizer/
-├── Documents/ #Contains summaries generated for the documents
-├── Documents/ #Contains Documents for summarization
-├── document_parser.py      # Document loading and chunking
-├── embedding_retrieval.py  # Vector embeddings and similarity search (ChromaDB)
-├── summary_generator.py    # AI-powered summary generation (Local Models)
-├── main.py                # Enhanced Tkinter desktop application
-├── requirements.txt       # Python dependencies
-└── README.md             # This file
-\`\`\`
+├── __pycache__/               # Python bytecode cache
+├── Documents/                 # Input documents for summarization
+├── Summaries/                 # Output summaries saved here
+├── document_parser.py         # Handles loading and chunking documents
+├── embedding_retrieval.py     # Embedding and semantic similarity retrieval
+├── summary_generator.py       # Generates summaries using local models
+├── main.py                    # Tkinter GUI application
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
+├── report.pdf                 # Final PDF project report
+└── RAG DOCUMENT SUMMARIZER.docx  # MS Word version of the report
+```
 
 ## Installation
 
@@ -49,7 +56,7 @@ DocumentSummarizer/
 
 2. **Load an AI model**:
    - Select your preferred AI model from the dropdown
-   - Click "🚀 Load Model" (first-time loading may take a few minutes)
+   - Click " Load Model" (first-time loading may take a few minutes)
    - Wait for the green checkmark confirmation
 
 3. **Configure processing settings**:
@@ -79,7 +86,7 @@ The application supports various open-source models:
 - **google/flan-t5-small** - Fastest, smallest model
 - **microsoft/DialoGPT-medium** - Conversational model
 
-## ⚙️ Configuration Options
+## Configuration Options
 
 ### Document Parser
 - `chunk_size`: Number of words per chunk (256-1024, default: 512)
@@ -93,7 +100,7 @@ The application supports various open-source models:
 - `model`: Local Hugging Face model to use
 - `summary_length`: "short", "medium", or "long"
 
-## 📊 Output Information
+## Output Information
 
 The application provides comprehensive information:
 
