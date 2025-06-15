@@ -168,7 +168,7 @@ The application provides comprehensive information:
 
 ## Sample Test Documents
 
-1. **ColBERT Passage Search Via BERT.pdf**: Academic paper on RAG(500-2000 words)
+1. **ColBERT Passage Search Via BERT.pdf**: Academic paper on RAG
 2. **genai.md**: Document on Generative AI in md format
 3. **datamining.txt**: Data Mining Lecture in txt format
 
